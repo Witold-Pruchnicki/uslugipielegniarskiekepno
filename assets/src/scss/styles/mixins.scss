@@ -1,0 +1,20 @@
+
+@mixin maxw($br){
+  @media (max-width:$br) {
+    @content;
+  }
+}
+@mixin minw($br){
+  @media (min-width:$br) {
+    @content;
+  }
+}
+@mixin basicTransition{
+  transition: all 0.4s;
+}
+
+$br-xs:500px;
+$br-md:800px;
+$br-l:1440px;
+$br-xl:1600px;
+$br-mobile:$br-md;

@@ -1,0 +1,60 @@
+/*=================================================================*/
+/*                      BASE
+/*=================================================================*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: $defaultFontColor;
+  background-color: #fff;
+  font-family: $font1;
+  font-size: 20px;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+li{
+  list-style: none;
+}
+a{
+  color: $defaultFontColor;
+  text-decoration: none;
+}
+
+/*=================================================================*/
+/*                      Preloader
+/*=================================================================*/
+
+
+/*=================================================================*/
+/*                      TYPOGRAPHY
+/*=================================================================*/
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-bold;
+}
+
+
+.btn{
+    background-color:$color1;
+    padding: 10px 20px;
+  display: block;
+  width: fit-content;
+    border-radius: 24px;
+    color: #ffffff;
+    font-weight: 600;
+    transition: 0.4s linear;
+    @media screen and (max-width: 768px){
+      font-size: 18px;
+      padding: 8px 15px;
+    }
+    &:hover{
+      transform:scale(1.2);
+    }
+}
