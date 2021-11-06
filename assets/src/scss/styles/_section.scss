@@ -33,57 +33,152 @@ main {
     }
   }
 
+  .section {
+    padding: 100px 0;
+  }
+  .section__intro{
+    text-transform: uppercase;
+    color:$color2;
+    font-family: $font-bold;
+    font-size: 18px;
+  }
+  .section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .section__text-wrapper {
+    flex-basis: 45%;
+    min-width: 0;
+  }
+
+  .section__image-wrapper {
+    flex-basis: 55%;
+  }
+
   .section__title {
     font-family: $font-bold;
-    font-size: 72px;
-    font-weight: 400;
+    font-size: 56px;
     line-height: 80px;
-    @media screen and (max-width: 1024px) {
-      font-size: 7vw;
-      line-height: 7vw;
-    }
+    font-weight: 400;
+    font-size: 56px;
+
     @media screen and (max-width: 768px) {
       font-size: 40px;
       line-height: 40px;
     }
   }
-  .section__text{
+
+  .section__text {
     @media screen and (max-width: 768px) {
-      font-size: 18px;
+      font-size: 19px;
     }
   }
 
+  /*=================================================================*/
+  /*                      header-section
+  /*=================================================================*/
   .header-section {
     width: 100%;
     margin: 0 auto;
     padddint-top: 100px;
-
     z-index: 3;
-
-    .header-section-wrapper {
-      display: flex;
-      justify-content: space-between;
-      @media screen and (max-width: 768px) {
-        flex-direction: column;
-      }
-      .header-section__text-wrapper {
-        flex-basis: 30%;
-
-        .btn {
-          margin-top: 40px;
-        }
-      }
-
-      .header-section__image-wrapper {
-        flex-basis: 60%;
-        @media screen and (max-width: 768px) {
-          margin-top: 30px;
-        }
-
-        .header-section__img {
-          max-width: 100%;
-        }
+    .header-section__title{
+      font-size: 72px;
+      @media screen and (max-width: 1024px) {
+        font-size: 7vw;
+        line-height: 7vw;
       }
     }
+    .header-section__btn {
+      margin-top: 40px;
+    }
+
+    .header-section__img {
+      max-width: 100%;
+      @media screen and (max-width: 768px) {
+        margin-top: 30px;
+      }
+    }
+
+
+  }
+}
+
+/*=================================================================*/
+/*                      aboutUs-section
+/*=================================================================*/
+.aboutUs-section{
+  .section-wrapper{
+    position: relative;
+    &::before{
+      content: ' ';
+      background-image: url("./assets/images/o-nas-dekoracja.png");
+      width: 50px;
+      height: 50px;
+      //background-color: red;
+      position: absolute;
+      top:0;
+      left:0;
+      z-index: 3;
+
+    }
+    column-gap: 30px;
+    @media screen and (max-width: 768px) {
+
+    }
+    .section__image-wrapper{
+      @media screen and (max-width: 768px) {
+        .aboutUs-section__img{
+          width: 100%;
+        }
+      }
+
+    }
+    .aboutUs-section__img{
+
+    }
+    .section__text{
+      padding:40px 0 ;
+      @media screen and (max-width: 768px) {
+        padding:8% 0 ;
+      }
+    }
+    .section__title{
+      padding-top:7% ;
+      line-height: 65px;
+      @media screen and (max-width: 1075px) {
+        font-size: 5vw;
+        line-height: 5vw;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 40px;
+        line-height: 40px;
+        padding-top:5%;
+      }
+    }
+    .section__text-wrapper{
+      @media screen and (max-width: 768px) {
+        margin-top: 10%;
+      }
+    }
+    .aboutUs__features-list{
+      margin-top: 5%;
+      .feature{
+        margin-bottom: 10px;
+        @media screen and (max-width: 768px) {
+          font-size: 19px;
+        }
+        .feature__img{
+          max-width: 20px;
+          margin-right: 8px;
+        }
+      }
+
+    }
+
   }
 }
