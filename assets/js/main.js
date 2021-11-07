@@ -21,6 +21,29 @@ window.onscroll = function () {
     navbar.classList.remove('main-header-active');
   }
 };
+
+var tiles = document.querySelectorAll('.service__tile');
+var tileContainer = document.querySelector('.services__tiles');
+var tileDescription = document.querySelectorAll('.detail__text');
+var descriptionImages = document.querySelectorAll('.detail__image');
+tiles.forEach(function (tile) {
+  tile.addEventListener('click', function (e) {
+    var id = e.target.dataset.id;
+
+    if (id) {
+      tiles.forEach(function (tile) {
+        tile.classList.remove('active');
+        e.currentTarget.classList.add('active');
+      });
+      tileDescription.forEach(function (description) {
+        description.classList.remove('active');
+      });
+      var element = document.getElementById(id);
+      console.log(id);
+      element.classList.add('active');
+    }
+  });
+});
 /******/ })()
 ;
 //# sourceMappingURL=main.js.map
