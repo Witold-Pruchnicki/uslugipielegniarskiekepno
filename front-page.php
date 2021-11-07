@@ -129,7 +129,8 @@
                                 </h3>
                                 <p class="detail__paragraph ">
                                     Metoda podawania zleconych przez lekarza leków, preparatów odżywczych i innych
-                                    płynów drogą dożylną. <br/> Domowe kroplówki zazwyczaj mają zasilać organizm w utracone
+                                    płynów drogą dożylną. <br/> Domowe kroplówki zazwyczaj mają zasilać organizm w
+                                    utracone
                                     płyny lub/i elektrolity. wymagane zlecenie od lekarza.
                                 </p>
                             </div>
@@ -138,7 +139,8 @@
                                     Zastrzyki
                                 </h3>
                                 <p class="detail__paragraph ">
-                                    Podskórne, śródskórne, domięśniowe i dożylne. <br/> Zabieg polegający na wprowadzeniu za
+                                    Podskórne, śródskórne, domięśniowe i dożylne. <br/> Zabieg polegający na
+                                    wprowadzeniu za
                                     pomocą igły i strzykawki roztworu zawierającego odpowiednią substancję leczniczą do
                                     organizmu Pacjenta w celu osiągnięcia efektu terapeutycznego.
                                 </p>
@@ -158,7 +160,8 @@
                                 </h3>
                                 <p class="detail__paragraph ">
                                     Odleżyna to uszkodzenie tkanek, do którego powstania dochodzi w wyniku zaburzeń
-                                    ukrwienia spowodowanych długotrwałym uciskiem na skórę i tkankę podskórną. <br/>  Bardzo
+                                    ukrwienia spowodowanych długotrwałym uciskiem na skórę i tkankę podskórną. <br/>
+                                    Bardzo
                                     ważna jest profesjonalna profilaktyka i leczenie odleżyn.
                                 </p>
                             </div>
@@ -168,7 +171,8 @@
                                 </h3>
                                 <p class="detail__paragraph ">
                                     Toaleta osoby obłożnie chorej, higiena całego ciała i odpowiednia pielęgnacja skóry,
-                                    jest jednym z podstawowych elementów opieki nad chorym. <br/> Jest częścią profilaktyki
+                                    jest jednym z podstawowych elementów opieki nad chorym. <br/> Jest częścią
+                                    profilaktyki
                                     przeciwodleżynowej, zapobiega podrażnieniom i odparzeniom skóry.
                                 </p>
                             </div>
@@ -186,7 +190,8 @@
                                     Zdejmowanie szwów
                                 </h3>
                                 <p class="detail__paragraph ">
-                                    Zabieg polegający na usunięciu nici niewchłanialnej z rany. <br/> O terminie wykonania
+                                    Zabieg polegający na usunięciu nici niewchłanialnej z rany. <br/> O terminie
+                                    wykonania
                                     zabiegu decyduje sposób i tempo gojenia się rany.
                                 </p>
                             </div>
@@ -196,7 +201,8 @@
                                 </h3>
                                 <p class="detail__paragraph ">
                                     Wyłonienie stomii jest często zabiegiem ratującym życie lub bezpośrednio
-                                    przyczyniającym się do poprawy jego stanu. <br/> Właściwa pielęgnacja stomii jelitowej
+                                    przyczyniającym się do poprawy jego stanu. <br/> Właściwa pielęgnacja stomii
+                                    jelitowej
                                     pozwala na zmniejszenie ryzyka wystąpienia powikłań.
                                 </p>
                             </div>
@@ -205,8 +211,10 @@
                                     Stawianie Baniek
                                 </h3>
                                 <p class="detail__paragraph ">
-                                    Zabieg stosowany na infekcje, przeziębienia, w celu polepszenia odporności. <br/> Bardzo
-                                    stara metoda leczenia wielu chorób. <br/> Niegdyś była to powszechna metoda leczenia, lecz
+                                    Zabieg stosowany na infekcje, przeziębienia, w celu polepszenia odporności. <br/>
+                                    Bardzo
+                                    stara metoda leczenia wielu chorób. <br/> Niegdyś była to powszechna metoda
+                                    leczenia, lecz
                                     dziś zalicza się ją do medycyny alternatywnej.
                                 </p>
                             </div>
@@ -221,11 +229,43 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
         </section>
-
+        <section class="section section-personnel">
+            <div class="container">
+                <h2 class="section__intro ">Personel</h2>
+                <h3 class="section__title">Pielęgniarki</h3>
+                <div class="personnel__wrapper">
+                    <div class="person">
+                        <div class="person__img-wrapper">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Renata.png" alt="" class="person__img">
+                        </div>
+                        <div class="person__details">
+                            <h4 class="person__name">
+                                mgr Renata Pruchnicka
+                            </h4>
+                            <a href="" class="person__phone" >
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/phone-icon.svg" alt="" class="phone__icon"><span class="phone__number">697 727 251</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div class="person__img-wrapper">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Renata.png" alt=""
+                            class="person__img">
+                        </div>
+                        <div class="person__details">
+                            <h4 class="person__name">
+                                mgr Renata Pruchnicka
+                            </h4>
+                            <a href="" class="person__phone" >
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/phone-icon.svg" alt="" class="phone__icon"><span class="phone__number">697 727 251</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 <?php get_footer(); ?>

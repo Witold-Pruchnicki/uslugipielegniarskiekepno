@@ -718,5 +718,65 @@ main {
             margin-top: 3%;
             line-height: 1.6; }
 
+/*=================================================================*/
+/*                      section-personnel
+/*=================================================================*/
+.section-personnel {
+  text-align: center; }
+  .section-personnel .personnel__wrapper {
+    max-width: 70%;
+    margin: 250px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    @media screen and (max-width: 768px) {
+      .section-personnel .personnel__wrapper {
+        flex-direction: column;
+        row-gap: 30%;
+        max-width: 100%; } }
+    .section-personnel .personnel__wrapper .person {
+      width: 40%;
+      position: relative; }
+      @media screen and (max-width: 768px) {
+        .section-personnel .personnel__wrapper .person {
+          margin-bottom: 280px;
+          width: 70%; } }
+      .section-personnel .personnel__wrapper .person .person__img-wrapper .person__img {
+        position: absolute;
+        bottom: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        border: 8px solid #088AFF;
+        box-shadow: 0 1px 2px #000000; }
+      .section-personnel .personnel__wrapper .person .person__details {
+        background-color: #D0E7F9;
+        border-radius: 16px;
+        box-shadow: 0 1px 2px #000000; }
+        .section-personnel .personnel__wrapper .person .person__details .person__name {
+          padding-top: 20%;
+          font-size: 24px;
+          font-family: "Palanquin Dark", sans-serif;
+          font-weight: 400; }
+          @media screen and (max-width: 768px) {
+            .section-personnel .personnel__wrapper .person .person__details .person__name {
+              font-size: 4vw; } }
+        .section-personnel .personnel__wrapper .person .person__details .person__phone {
+          display: flex;
+          padding: 12% 0 15%;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto; }
+          .section-personnel .personnel__wrapper .person .person__details .person__phone .phone__icon {
+            max-width: 35px;
+            margin-right: 5%; }
+          .section-personnel .personnel__wrapper .person .person__details .person__phone .phone__number {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: "Palanquin Dark", sans-serif; }
+            @media screen and (max-width: 768px) {
+              .section-personnel .personnel__wrapper .person .person__details .person__phone .phone__number {
+                font-size: 5vw; } }
+
 
 /*# sourceMappingURL=main.css.map*/
