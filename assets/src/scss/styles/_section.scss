@@ -69,8 +69,8 @@ main {
     font-size: 56px;
 
     @media screen and (max-width: 768px) {
-      font-size: 40px;
-      line-height: 40px;
+      font-size: 7vw;
+      line-height: 7vw;
     }
   }
 
@@ -138,11 +138,12 @@ main {
     }
 
     .section__image-wrapper {
-      @media screen and (max-width: 768px) {
-        .aboutUs-section__img {
-          width: 100%;
+      .aboutUs-section__img {
+        @media screen and (max-width: 768px) {
+            width: 100%;
         }
       }
+
 
     }
 
@@ -161,12 +162,9 @@ main {
       padding-top: 7%;
       line-height: 65px;
       @media screen and (max-width: 1075px) {
-        font-size: 5vw;
-        line-height: 5vw;
+        line-height: 7vw;
       }
       @media screen and (max-width: 768px) {
-        font-size: 40px;
-        line-height: 40px;
         padding-top: 5%;
       }
     }
@@ -233,20 +231,21 @@ main {
       row-gap: 15px;
       column-gap: 15px;
       flex-basis: 70%;
-      @media screen and (max-width: 768px) {
-        max-width: 90%;
-        margin: 0 auto;
+      @media screen and (max-width: 400px) {
+        grid-template-columns: none;
       }
       .service__tile {
         height: 220px;
         background-color: #ffffff;
         border-radius: 16px;
         max-width: 170px;
-        box-shadow: (0 2px 4px black);
+        box-shadow:  0 5px 15px rgba(0, 0, 0, 0.1);
         color:$defaultFontColor;
         position: relative;
         cursor: pointer;
-
+        @media screen and (max-width: 768px) {
+          max-width: 100%;
+        }
         &.active{
           background-color: $color1;
           color:#ffffff;
@@ -319,7 +318,9 @@ main {
   text-align: center;
   .personnel__wrapper{
     max-width: 70%;
-    margin:250px auto;
+    margin-top:250px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -327,14 +328,19 @@ main {
       flex-direction: column;
       row-gap: 30%;
       max-width: 100%;
+      max-width: 90%;
     }
     .person{
       width: 40%;
       position: relative;
       @media screen and (max-width: 768px) {
-        margin-bottom: 280px;
-        width: 70%;
+        margin-bottom: 220px;
+        width: 90%;
+        &:last-child{
+          margin-bottom: 70px;
+        }
       }
+
       .person__img-wrapper{
         .person__img{
           position: absolute;
@@ -359,6 +365,9 @@ main {
           @media screen and (max-width: 768px) {
             font-size: 4vw;
           }
+          @media screen and (max-width: 550px) {
+            font-size: 24px;
+          }
 
         }
         .person__phone{
@@ -378,8 +387,87 @@ main {
             @media screen and (max-width: 768px) {
               font-size: 5vw;
             }
+            @media screen and (max-width: 550px) {
+              font-size: 24px;
+            }
           }
         }
+      }
+    }
+  }
+}
+.btn-wrapper{
+  display: none;
+  @media screen and (max-width: 550px) {
+    display: flex;
+  }
+}
+/*=================================================================*/
+/*                      section-services
+/*=================================================================*/
+.section-experience{
+  background-color: $color1;
+  .experience__container{
+    max-width: 65%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    @media screen and (max-width: 768px) {
+      font-size: 5vw;
+      flex-direction: column;
+      align-items: center;
+    }
+    .experience__item{
+      flex-basis: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @media screen and (max-width: 768px) {
+        padding: 10%;
+      }
+      .experience__circle{
+        width: 150px;
+        height: 150px;
+        padding: 5%;
+        border-radius: 50%;
+        background-color: $color2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: 768px) {
+          padding: 4vw;
+        }
+        .experience__icon{
+          max-width: 70%;
+        }
+      }
+      .experience__numbers{
+        font-size: 5vw;
+        color: #ffffff;
+        padding: 5% 0;
+        font-family: $font-bold;
+        @media screen and (max-width: 768px) {
+          font-size: 35px;
+
+        }
+        .experience_infnity{
+          max-width: 5vw;
+          padding-top: 3%;
+          @media screen and (max-width: 768px) {
+            max-width: 50px;
+          }
+        }
+      }
+      .experience__text{
+        color: #ffffff;
+        font-size: 2vw;
+        text-align: center;
+        @media screen and (max-width: 900px) {
+          font-size: 22px;
+        }
+
       }
     }
   }

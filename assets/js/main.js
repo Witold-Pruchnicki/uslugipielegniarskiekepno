@@ -26,6 +26,9 @@ var tiles = document.querySelectorAll('.service__tile');
 var tileContainer = document.querySelector('.services__tiles');
 var tileDescription = document.querySelectorAll('.detail__text');
 var descriptionImages = document.querySelectorAll('.detail__image');
+var nextBtn = document.querySelector('.next-btn');
+var prevBtn = document.querySelector('.prev-btn');
+var serviceTile = document.querySelectorAll('.service__tile');
 tiles.forEach(function (tile) {
   tile.addEventListener('click', function (e) {
     var id = e.target.dataset.id;
@@ -44,6 +47,10 @@ tiles.forEach(function (tile) {
     }
   });
 });
+/*=================================================================*/
+
+/*                      slider
+/*=================================================================*/
 /******/ })()
 ;
 //# sourceMappingURL=main.js.map

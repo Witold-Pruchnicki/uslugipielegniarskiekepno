@@ -121,9 +121,10 @@
                             <div class="tile__text" data-id="uslugi-pielegniarskie">Usługi Pielęgniarskie</div>
                         </div>
                     </div>
-                    <div class="serices__details">
+
+                    <div class="serices__details ">
                         <div class="detail_wrapper">
-                            <div class="detail__text active" id="kroplowki">
+                            <div class="detail__text active swiper-slide" id="kroplowki">
                                 <h3 class="detail__header">
                                     Kroplówki
                                 </h3>
@@ -145,7 +146,7 @@
                                     organizmu Pacjenta w celu osiągnięcia efektu terapeutycznego.
                                 </p>
                             </div>
-                            <div class="detail__text" id="cewnikowanie">
+                            <div class="detail__text " id="cewnikowanie">
                                 <h3 class="detail__header">
                                     Cewnikowanie
                                 </h3>
@@ -230,6 +231,7 @@
                         </div>
                     </div>
                 </div>
+
         </section>
         <section class="section section-personnel">
             <div class="container">
@@ -238,34 +240,72 @@
                 <div class="personnel__wrapper">
                     <div class="person">
                         <div class="person__img-wrapper">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Renata.png" alt="" class="person__img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Renata.png" alt=""
+                                 class="person__img">
                         </div>
                         <div class="person__details">
                             <h4 class="person__name">
                                 mgr Renata Pruchnicka
                             </h4>
-                            <a href="" class="person__phone" >
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/phone-icon.svg" alt="" class="phone__icon"><span class="phone__number">697 727 251</span>
+                            <a href="" class="person__phone">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/phone-icon.svg"
+                                     alt="" class="phone__icon"><span class="phone__number">697 727 251</span>
                             </a>
                         </div>
                     </div>
                     <div class="person">
                         <div class="person__img-wrapper">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Renata.png" alt=""
-                            class="person__img">
+                                 class="person__img">
                         </div>
                         <div class="person__details">
                             <h4 class="person__name">
                                 mgr Renata Pruchnicka
                             </h4>
-                            <a href="" class="person__phone" >
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/phone-icon.svg" alt="" class="phone__icon"><span class="phone__number">697 727 251</span>
+                            <a href="" class="person__phone">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/phone-icon.svg"
+                                     alt="" class="phone__icon"><span class="phone__number">697 727 251</span>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="section section-experience">
+            <div class="experience__container">
+                <div class="experience__item">
+                    <div class="experience__circle">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/experience-years.png" alt=""
+                             class="phone__icon" alt="" class="experience__icon">
+                    </div>
+                    <p class="experience__numbers">
+                        25
+                    </p>
+                    <span class="experience__text">Lat doświadczenia w zawodzie</span>
+                </div>
+                <div class="experience__item">
+                    <div class="experience__circle">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nurse.png" alt=""
+                             class="experience__icon">
+                    </div>
+                    <p class="experience__numbers">
+                        10
+                    </p>
+                    <span class="experience__text">Lat doświadczenia w opiece domowej </span>
+                </div>
+                <div class="experience__item">
+                    <div class="experience__circle">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/zadowoleni-klienci.png" alt=""
+                             class="phone__icon" alt="" class="experience__icon">
+                    </div>
+                    <p class="experience__numbers">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/infinity.png" alt="" class="experience_infnity">
+                    </p>
+                    <span class="experience__text">Niezliczona ilość zadowolonych pacjentów</span>
+                </div>
+            </div>
+        </section>
+
     </main>
 
 <?php get_footer(); ?>

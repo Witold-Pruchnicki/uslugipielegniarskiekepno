@@ -1,3 +1,4 @@
+
 const headerNav = document.querySelector('.nav__list');
 const navbarHamburger = document.querySelector('.main-header__hamburger')
 const navbarHamburgerLines = document.querySelectorAll('.line')
@@ -19,7 +20,10 @@ window.onscroll = () => {
 const tiles = document.querySelectorAll('.service__tile');
 const tileContainer= document.querySelector('.services__tiles')
 const tileDescription = document.querySelectorAll('.detail__text');
-const descriptionImages = document.querySelectorAll('.detail__image')
+const descriptionImages = document.querySelectorAll('.detail__image');
+const nextBtn = document.querySelector('.next-btn');
+const prevBtn = document.querySelector('.prev-btn')
+const serviceTile= document.querySelectorAll('.service__tile')
 
 tiles.forEach(tile=>{
     tile.addEventListener('click',(e)=>{
@@ -38,3 +42,10 @@ tiles.forEach(tile=>{
         }
     })
 })
+/*=================================================================*/
+/*                      slider
+/*=================================================================*/
+
+
+
+
