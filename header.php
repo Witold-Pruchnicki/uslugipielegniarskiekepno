@@ -14,7 +14,7 @@
         } else {
             echo wp_title('');
         } ?></title>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body <?php body_class(); ?>>
 <header class="main-header ">
@@ -26,15 +26,15 @@
 
         <ul class="nav__list">
             <a href="" class="mobile-logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/uslugipielegniarskiekepno-logo.svg"
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/uslugipielegniarskiekepno-logo.png"
                      alt="" class="mobile-logo__img">
             </a>
-            <li class="nav__item"><a class="nav__link" href="">O Nas</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Usługi</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Personel</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Kontakt</a></li>
+            <li class="nav__item"><a class="nav__link" href="#aboutUs">O Nas</a></li>
+            <li class="nav__item"><a class="nav__link" href="#services">Usługi</a></li>
+            <li class="nav__item"><a class="nav__link" href="#personnel">Personel</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contact">Kontakt</a></li>
         </ul>
-        <a href="#" class=" btn main-header__button">Zadzwoń</a>
+        <a href="tel:697727251" class=" btn main-header__button">Zadzwoń</a>
         <button class="main-header__hamburger"
                 onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
                 aria-label="Main Menu">

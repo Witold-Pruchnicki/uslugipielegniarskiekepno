@@ -6,10 +6,13 @@ var __webpack_exports__ = {};
 var headerNav = document.querySelector('.nav__list');
 var navbarHamburger = document.querySelector('.main-header__hamburger');
 var navbarHamburgerLines = document.querySelectorAll('.line');
+var navLink = document.querySelectorAll('.nav__link');
 navbarHamburger.addEventListener('click', function () {
   headerNav.classList.toggle('nav__list-active');
-  navbarHamburgerLines.forEach(function (i) {
-    return i.classList.toggle('line-white');
+});
+navLink.forEach(function (link) {
+  link.addEventListener('click', function () {
+    headerNav.classList.toggle('nav__list-active');
   });
 });
 var navbar = document.querySelector('.main-header');
@@ -23,15 +26,15 @@ window.onscroll = function () {
 };
 
 var tiles = document.querySelectorAll('.service__tile');
-var tileContainer = document.querySelector('.services__tiles');
 var tileDescription = document.querySelectorAll('.detail__text');
 var descriptionImages = document.querySelectorAll('.detail__image');
-var nextBtn = document.querySelector('.next-btn');
-var prevBtn = document.querySelector('.prev-btn');
-var serviceTile = document.querySelectorAll('.service__tile');
+var tileImages = document.querySelectorAll('.tile__img');
+var detailLink = document.querySelectorAll('.detail');
 tiles.forEach(function (tile) {
   tile.addEventListener('click', function (e) {
     var id = e.target.dataset.id;
+    console.log(id);
+    console.log(e.currentTarget);
 
     if (id) {
       tiles.forEach(function (tile) {
@@ -42,15 +45,11 @@ tiles.forEach(function (tile) {
         description.classList.remove('active');
       });
       var element = document.getElementById(id);
-      console.log(id);
       element.classList.add('active');
     }
   });
 });
-/*=================================================================*/
-
-/*                      slider
-/*=================================================================*/
+AOS.init();
 /******/ })()
 ;
 //# sourceMappingURL=main.js.map

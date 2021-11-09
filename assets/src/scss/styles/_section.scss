@@ -35,6 +35,9 @@ main {
 
   .section {
     padding: 100px 0;
+    @media screen and (max-width: 1075px) {
+      padding: 30px 0;
+    }
   }
 
   .section__intro {
@@ -67,7 +70,10 @@ main {
     line-height: 80px;
     font-weight: 400;
     font-size: 56px;
-
+    @media screen and (max-width: 1075px) {
+      line-height: 7vw;
+      font-size: 5vw;
+    }
     @media screen and (max-width: 768px) {
       font-size: 7vw;
       line-height: 7vw;
@@ -121,7 +127,6 @@ main {
 
     &::before {
       content: ' ';
-      background-image: url("./assets/images/o-nas-dekoracja.png");
       width: 50px;
       height: 50px;
       //background-color: red;
@@ -131,16 +136,16 @@ main {
       z-index: 3;
 
     }
-
     column-gap: 30px;
-    @media screen and (max-width: 768px) {
 
+    @media screen and (max-width: 1060px) {
+      column-gap: 5%;
     }
 
     .section__image-wrapper {
       .aboutUs-section__img {
         @media screen and (max-width: 768px) {
-            width: 100%;
+          width: 100%;
         }
       }
 
@@ -161,15 +166,16 @@ main {
     .section__title {
       padding-top: 7%;
       line-height: 65px;
-      @media screen and (max-width: 1075px) {
-        line-height: 7vw;
-      }
       @media screen and (max-width: 768px) {
         padding-top: 5%;
+        line-height: 40px;
       }
     }
 
     .section__text-wrapper {
+      @media screen and (max-width: 1060px) {
+        flex-basis: 55%;
+      }
       @media screen and (max-width: 768px) {
         margin-top: 10%;
       }
@@ -213,18 +219,20 @@ main {
 
   .section-services__wrapper {
     display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
     margin-top: 10%;
     column-gap: 1%;
     @media screen and (max-width: 768px) {
       flex-direction: column;
       row-gap: 40px;
     }
-    .service__tile-wrapper{
+
+    .service__tile-wrapper {
       width: 100%;
       height: 100%;
       z-index: 1;
     }
+
     .services__tiles {
       display: grid;
       grid-template-columns: repeat(auto-fit, 170px);
@@ -234,21 +242,23 @@ main {
       @media screen and (max-width: 400px) {
         grid-template-columns: none;
       }
+
       .service__tile {
         height: 220px;
         background-color: #ffffff;
         border-radius: 16px;
         max-width: 170px;
-        box-shadow:  0 5px 15px rgba(0, 0, 0, 0.1);
-        color:$defaultFontColor;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        color: $defaultFontColor;
         position: relative;
         cursor: pointer;
         @media screen and (max-width: 768px) {
           max-width: 100%;
         }
-        &.active{
+
+        &.active {
           background-color: $color1;
-          color:#ffffff;
+          color: #ffffff;
         }
 
         .tile__circle {
@@ -256,16 +266,18 @@ main {
           max-width: 100px;
           height: 100px;
           border-radius: 50%;
-          background-color:#F7F6FE;
+          background-color: #F7F6FE;
           display: flex;
           align-items: center;
           justify-content: center;
-          .tile__img{
+
+          .tile__img {
             max-width: 100%;
 
           }
         }
-        .tile__text{
+
+        .tile__text {
           text-align: center;
           font-family: $font1;
           font-size: 20px;
@@ -275,33 +287,37 @@ main {
 
     .serices__details {
 
-      flex-basis: 50%;
       height: fit-content;
 
-      .detail_wrapper{
+      .detail_wrapper {
         box-shadow: (0 1px 2px #000000);
         border-radius: 16px;
         overflow: hidden;
         background-color: #fff;
+        max-width: 400px;
         @media screen and (max-width: 768px) {
           max-width: 90%;
           margin: 0 auto;
         }
-        .detail__text{
+
+        .detail__text {
           padding: 30px 10%;
           display: none;
           @media screen and (max-width: 768px) {
             text-align: center;
           }
-          &.active{
+
+          &.active {
             display: block;
           }
-          .detail__header{
+
+          .detail__header {
             font-family: $font-bold;
             font-size: 24px;
             font-weight: normal;
           }
-          .detail__paragraph{
+
+          .detail__paragraph {
             margin-top: 3%;
             line-height: 1.6;
           }
@@ -310,15 +326,17 @@ main {
     }
   }
 }
+
 /*=================================================================*/
 /*                      section-personnel
 /*=================================================================*/
 
-.section-personnel{
+.section-personnel {
   text-align: center;
-  .personnel__wrapper{
+
+  .personnel__wrapper {
     max-width: 70%;
-    margin-top:250px;
+    margin-top: 250px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -330,65 +348,80 @@ main {
       max-width: 100%;
       max-width: 90%;
     }
-    .person{
+    @media screen and (max-width: 550px) {
+      margin-top: 150px;
+    }
+
+    .person {
       width: 40%;
       position: relative;
       @media screen and (max-width: 768px) {
         margin-bottom: 220px;
-        width: 90%;
-        &:last-child{
+        width: 75%;
+        &:last-child {
           margin-bottom: 70px;
         }
       }
+      @media screen and (max-width: 550px) {
+        margin-bottom:150px;
+      }
 
-      .person__img-wrapper{
-        .person__img{
+      .person__img-wrapper {
+        .person__img {
           position: absolute;
           bottom: 80%;
-          left:50%;
+          left: 50%;
           transform: translateX(-50%);
           border-radius: 50%;
-          border:8px solid $color1;
+          border: 8px solid $color1;
           box-shadow: (0 1px 2px #000000);
+          @media screen and (max-width: 768px) {
+            max-width: 60%;
+          }
         }
       }
 
-      .person__details{
+      .person__details {
         background-color: #D0E7F9;
         border-radius: 16px;
         box-shadow: (0 1px 2px #000000);
-        .person__name{
-          padding-top:20%;
-          font-size: 24px;
-          font-family: $font-bold;
-          font-weight: 400;
+
+        .person__name {
+          padding-top: 20%;
+          font-family: $font1;
+
           @media screen and (max-width: 768px) {
-            font-size: 4vw;
+            font-size: 24px;
           }
           @media screen and (max-width: 550px) {
-            font-size: 24px;
+            font-size: 20px;
           }
 
         }
-        .person__phone{
+
+        .person__phone {
           display: flex;
-          padding:12% 0 15% ;
+          padding: 12% 0 15%;
           align-items: center;
           justify-content: center;
           margin: 0 auto;
-          .phone__icon{
+          @media screen and (max-width: 550px) {
+            padding: 15px 0;
+          }
+          .phone__icon {
             max-width: 35px;
             margin-right: 5%;
           }
-          .phone__number{
+
+          .phone__number {
             font-size: 25px;
             font-weight: bold;
-            font-family: $font-bold;
+            font-family: $font1;
             @media screen and (max-width: 768px) {
               font-size: 5vw;
             }
             @media screen and (max-width: 550px) {
-              font-size: 24px;
+              font-size: 20px;
             }
           }
         }
@@ -396,18 +429,21 @@ main {
     }
   }
 }
-.btn-wrapper{
+
+.btn-wrapper {
   display: none;
   @media screen and (max-width: 550px) {
     display: flex;
   }
 }
+
 /*=================================================================*/
 /*                      section-services
 /*=================================================================*/
-.section-experience{
+.section-experience {
   background-color: $color1;
-  .experience__container{
+
+  .experience__container {
     max-width: 65%;
     margin: 0 auto;
     display: flex;
@@ -418,7 +454,8 @@ main {
       flex-direction: column;
       align-items: center;
     }
-    .experience__item{
+
+    .experience__item {
       flex-basis: 30%;
       display: flex;
       flex-direction: column;
@@ -427,9 +464,10 @@ main {
       @media screen and (max-width: 768px) {
         padding: 10%;
       }
-      .experience__circle{
-        width: 150px;
-        height: 150px;
+
+      .experience__circle {
+        width: 120px;
+        height: 120px;
         padding: 5%;
         border-radius: 50%;
         background-color: $color2;
@@ -439,12 +477,14 @@ main {
         @media screen and (max-width: 768px) {
           padding: 4vw;
         }
-        .experience__icon{
+
+        .experience__icon {
           max-width: 70%;
         }
       }
-      .experience__numbers{
-        font-size: 5vw;
+
+      .experience__numbers {
+        font-size: 56px;
         color: #ffffff;
         padding: 5% 0;
         font-family: $font-bold;
@@ -452,7 +492,8 @@ main {
           font-size: 35px;
 
         }
-        .experience_infnity{
+
+        .experience_infnity {
           max-width: 5vw;
           padding-top: 3%;
           @media screen and (max-width: 768px) {
@@ -460,15 +501,94 @@ main {
           }
         }
       }
-      .experience__text{
+
+      .experience__text {
         color: #ffffff;
-        font-size: 2vw;
+        font-size: 24px;
         text-align: center;
         @media screen and (max-width: 900px) {
           font-size: 22px;
         }
+        @media screen and (max-width: 550px) {
+          font-size: 20px;
+        }
 
       }
     }
+  }
+}
+
+.section-contact {
+  margin-top: 80px;
+  @media screen and (max-width: 768px) {
+    margin-top: 30px;
+  }
+
+  .section__text-wrapper {
+    min-width: 300px;
+
+    .section-contact__person {
+      margin-top: 85px;
+      @media screen and (max-width: 768px) {
+        margin-top: 30px;
+      }
+
+      .person__name {
+        font-weight: 400;
+        font-size: 24px;
+        @media screen and (max-width: 550px) {
+          font-size: 20px;
+        }
+      }
+
+      .btn-phone {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 15px;
+        font-size: 24px;
+        @media screen and (max-width: 550px) {
+          font-size: 20px;
+        }
+
+        .phone__icon {
+          margin-right: 10px;
+          width: 25px;
+        }
+      }
+    }
+  }
+
+  .section__image-wrapper {
+    @media screen and (max-width: 945px) {
+      & iframe {
+        max-width: 400px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: 30px;
+      & iframe {
+        max-width: 100%;
+      }
+
+    }
+  }
+}
+#details{
+  scroll-margin-top: 250px;
+}
+.detail{
+  display: block;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+}
+#aboutUs,#services,#personnel,#contact{
+  scroll-margin-top: 100px;
+  @media screen and (max-width: 500px) {
+
+    scroll-margin-top: 250px;
   }
 }
